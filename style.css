@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(17, 17, 17, 0.741);
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: rgb(229, 93, 93);
+  /* color: #000; */
+  opacity: 0.85;
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+  margin: auto;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  font-size: 1.7rem;
+  padding-right: 23px;
+}
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar-container input[type="checkbox"] {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 30px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+  color: black;
+}
+
+.navbar-container .hamburger-lines {
+  display: block;
+  height: 28px;
+  width: 35px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #000;
+  display: none;
+}
+
+.navbar-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.home-section {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  gap: 20px;
+  background: linear-gradient(
+    106.5deg,
+    #e7df80e8 23%,
+    rgba(214, 99, 189, 0.8) 93%
+  );
+}
+
+.home-section > .content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content h1 {
+  margin-top: 140px;
+  margin-left: 64px;
+  font-size: 5.4rem;
+  font-weight: 600;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.content p {
+  margin: 57px 58px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.content > button {
+  padding: 11px 23px 11px 23px;
+  width: 30%;
+  margin-left: 64px;
+  background-color: rgb(225, 102, 102);
+  color: white;
+  text-transform: capitalize;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  height: 50px;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+}
+.sideImg {
+  flex: 1;
+}
+.sideImg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.secondpage {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 4rem 8rem 4rem;
+  background: linear-gradient(
+    106.5deg,
+    #e7df80e8 23%,
+    rgba(214, 99, 189, 0.8) 93%
+  );
+}
+.image-section {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-left: 53px;
+}
+.content-section {
+  width: 60vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+}
+.leftpart {
+  height: 70vh;
+}
+.secondpart_bit {
+  height: 70vh;
+  width: 20vw;
+}
+.secondpart_bit img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.first_pic {
+  height: 49%;
+  width: 20vw;
+}
+.first_pic img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.second_pic {
+  height: 48%;
+  margin-top: 12px;
+}
+.second_pic img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.second {
+  margin-top: 0rem;
+  background-color: rgb(225, 102, 102);
+  padding: 3rem;
+  width: 77%;
+}
+.first_line {
+  font-size: 13px;
+}
+.second_line {
+  font-weight: 900;
+  font-size: 3.6rem;
+  padding: 1rem 0 1rem 0;
+  font-family: "Poppins", sans-serif;
+}
+.buttonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.button-arrow {
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.buttonDiv > .button {
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+}
+
+@media  screen and (max-width:1024px) {
+  .content > h1 {
+    font-size: 2.3rem;
+    margin-left: 28px;
+  }
+
+  .content > p {
+    font-size: 15px;
+    margin: 15px 28px;
+  }
+
+  .content > button{
+    width: 50%;
+    margin-left: 28px;
+    padding: 4px 16px;
+  }
+
+  .second{
+    margin-top: 0rem;
+    background-color: rgb(225, 102, 102);
+    padding: 2rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    opacity: 0.95;
+  }
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 28px;
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #fff;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 40px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    overflow: scroll;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+   
+  .content > h1 {
+    font-size: 2.3rem;
+    margin-left: 28px;
+  }
+
+  .content > p {
+    font-size: 15px;
+    margin: 15px 28px;
+  }
+
+  .content > button{
+    width: 50%;
+    margin-left: 28px;
+    padding: 4px 16px;
+  }
+  
+  .image-section{
+    margin-left: -16px;
+  }
+  
+  .second{
+    margin-top: 1rem;
+    width: 36vw;
+  }
+
+  .second_line{
+    font-size: 1.6rem;
+  }
+}
+
+@media  screen and (max-width:600px) {
+  .home-section{
+     flex-direction: column;
+  }
+  .secondpage{
+    flex-direction: column;
+  }
+  .first_pic{
+    height: 42%;
+    width: 35vw;
+  }
+  .leftpart{
+    height: 54vh;
+    width: 57vw;
+  }
+  .secondpart_bit{
+    height: 54vh;
+    width: 39vw;
+  }
+  .secondpart_bit > img{
+    object-fit: cover;
+    height: 92%;
+    width: 356%;
+  }
+  .image-section{
+    margin-left: -86px;
+  }
+
+  .second{
+    margin-top: 1rem;
+    width: 73vw
+  }
+}
+
+
